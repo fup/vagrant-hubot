@@ -14,6 +14,7 @@ node /hubot/ {
   }
 
   class { 'nodejs_squeeze': }
+  -> class { 'git': }
   -> class { 'hubot':
       adapter => 'irc',
       irc_nickname => 'crunchy',

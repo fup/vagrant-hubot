@@ -1,3 +1,4 @@
 .rvmrc
 .vagrant
 vagrant/iso/*
+vagrant/graph/*
