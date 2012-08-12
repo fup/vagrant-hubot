@@ -9,6 +9,10 @@ hubot:
     irc:
       host: 6667
       guest: 6667
+  mounts:
+    hubot_scripts:
+      host: ../scripts
+      guest: /tmp/hubot_scripts
 build:
   <<: *default
   puppet:
