@@ -1,9 +1,9 @@
 puppet:
-  manifests_path: ../puppet/manifests
+  manifests_path: ../manifests
   manifest_file: site.pp
   modules:
-    - ../puppet/modules/dist
-    - ../puppet/modules/site
+    - ../modules/dist
+    - ../modules/site
   options:
     - --verbose
     - --debug
