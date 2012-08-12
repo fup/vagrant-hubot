@@ -1,0 +1,263 @@
+digraph Resources {
+    label = "Resources"
+    "Class[Stdlib]" [
+        fontsize = 8,
+        label = "Class[Stdlib]"
+    ]
+
+    "Anchor[sudoers::end]" [
+        fontsize = 8,
+        label = "Anchor[sudoers::end]"
+    ]
+
+    "File[/etc/sudoers]" [
+        fontsize = 8,
+        label = "File[/etc/sudoers]"
+    ]
+
+    "Sudoers::Entry[vagrant]" [
+        fontsize = 8,
+        label = "Sudoers::Entry[vagrant]"
+    ]
+
+    "Class[Vagrant]" [
+        fontsize = 8,
+        label = "Class[Vagrant]"
+    ]
+
+    "Stage[setup_infra]" [
+        fontsize = 8,
+        label = "Stage[setup_infra]"
+    ]
+
+    "Schedule[monthly]" [
+        fontsize = 8,
+        label = "Schedule[monthly]"
+    ]
+
+    "Node[basenode]" [
+        fontsize = 8,
+        label = "Node[basenode]"
+    ]
+
+    "Stage[deploy_infra]" [
+        fontsize = 8,
+        label = "Stage[deploy_infra]"
+    ]
+
+    "Exec[rebuild-sudoers]" [
+        fontsize = 8,
+        label = "Exec[rebuild-sudoers]"
+    ]
+
+    "Class[Settings]" [
+        fontsize = 8,
+        label = "Class[Settings]"
+    ]
+
+    "Node[default]" [
+        fontsize = 8,
+        label = "Node[default]"
+    ]
+
+    "Schedule[hourly]" [
+        fontsize = 8,
+        label = "Schedule[hourly]"
+    ]
+
+    "Schedule[puppet]" [
+        fontsize = 8,
+        label = "Schedule[puppet]"
+    ]
+
+    "Class[Sudoers]" [
+        fontsize = 8,
+        label = "Class[Sudoers]"
+    ]
+
+    "File[/tmp/sudoers.d/fragment/vagrant]" [
+        fontsize = 8,
+        label = "File[/tmp/sudoers.d/fragment/vagrant]"
+    ]
+
+    "Class[Sudoers::Params]" [
+        fontsize = 8,
+        label = "Class[Sudoers::Params]"
+    ]
+
+    "Class[Sudoers::Config]" [
+        fontsize = 8,
+        label = "Class[Sudoers::Config]"
+    ]
+
+    "Filebucket[puppet]" [
+        fontsize = 8,
+        label = "Filebucket[puppet]"
+    ]
+
+    "File[/tmp/sudoers.d/fragment]" [
+        fontsize = 8,
+        label = "File[/tmp/sudoers.d/fragment]"
+    ]
+
+    "Stage[main]" [
+        fontsize = 8,
+        label = "Stage[main]"
+    ]
+
+    "Class[Main]" [
+        fontsize = 8,
+        label = "Class[Main]"
+    ]
+
+    "File[/tmp/sudoers.d/fragment/00_sudoers_defaults]" [
+        fontsize = 8,
+        label = "File[/tmp/sudoers.d/fragment/00_sudoers_defaults]"
+    ]
+
+    "Class[Stdlib::Stages]" [
+        fontsize = 8,
+        label = "Class[Stdlib::Stages]"
+    ]
+
+    "Class[Sudoers::Package]" [
+        fontsize = 8,
+        label = "Class[Sudoers::Package]"
+    ]
+
+    "Schedule[daily]" [
+        fontsize = 8,
+        label = "Schedule[daily]"
+    ]
+
+    "Stage[setup]" [
+        fontsize = 8,
+        label = "Stage[setup]"
+    ]
+
+    "Stage[deploy_app]" [
+        fontsize = 8,
+        label = "Stage[deploy_app]"
+    ]
+
+    "Schedule[never]" [
+        fontsize = 8,
+        label = "Schedule[never]"
+    ]
+
+    "Stage[setup_app]" [
+        fontsize = 8,
+        label = "Stage[setup_app]"
+    ]
+
+    "Anchor[sudoers::begin]" [
+        fontsize = 8,
+        label = "Anchor[sudoers::begin]"
+    ]
+
+    "Stage[deploy]" [
+        fontsize = 8,
+        label = "Stage[deploy]"
+    ]
+
+    "Schedule[weekly]" [
+        fontsize = 8,
+        label = "Schedule[weekly]"
+    ]
+
+    "Package[sudo]" [
+        fontsize = 8,
+        label = "Package[sudo]"
+    ]
+
+    "File[/tmp/sudoers.d]" [
+        fontsize = 8,
+        label = "File[/tmp/sudoers.d]"
+    ]
+
+    "Stage[runtime]" [
+        fontsize = 8,
+        label = "Stage[runtime]"
+    ]
+
+    "Stage[main]" -> "Class[Main]" [
+        fontsize = 8
+    ]
+
+    "Class[Main]" -> "Node[basenode]" [
+        fontsize = 8
+    ]
+
+    "Class[Main]" -> "Node[default]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Vagrant]" [
+        fontsize = 8
+    ]
+
+    "Class[Vagrant]" -> "Sudoers::Entry[vagrant]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Sudoers]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Stdlib]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Stdlib::Stages]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Sudoers::Params]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers]" -> "Anchor[sudoers::begin]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Sudoers::Package]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers::Package]" -> "Package[sudo]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Class[Sudoers::Config]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers::Config]" -> "File[/tmp/sudoers.d]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers::Config]" -> "File[/tmp/sudoers.d/fragment]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers::Config]" -> "File[/tmp/sudoers.d/fragment/00_sudoers_defaults]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers::Config]" -> "File[/etc/sudoers]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers::Config]" -> "Exec[rebuild-sudoers]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers]" -> "Anchor[sudoers::end]" [
+        fontsize = 8
+    ]
+
+    "Sudoers::Entry[vagrant]" -> "File[/tmp/sudoers.d/fragment/vagrant]" [
+        fontsize = 8
+    ]
+
+}

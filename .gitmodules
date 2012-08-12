@@ -1,0 +1,21 @@
+[submodule "modules/dist/irc"]
+	path = modules/dist/irc
+	url = https://github.com/jfryman/puppet-irc.git
+[submodule "modules/dist/nodejs"]
+	path = modules/dist/nodejs
+	url = https://github.com/puppetlabs/puppetlabs-nodejs.git
+[submodule "modules/dist/stdlib"]
+	path = modules/dist/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "modules/dist/apt"]
+	path = modules/dist/apt
+	url = https://github.com/jfryman/puppet-apt.git
+[submodule "modules/dist/sudoers"]
+	path = modules/dist/sudoers
+	url = https://github.com/jfryman/puppet-sudoers.git
+[submodule "modules/dist/git"]
+	path = modules/dist/git
+	url = https://github.com/jfryman/puppet-gitolite.git
+[submodule "modules/dist/hubot"]
+	path = modules/dist/hubot
+	url = https://github.com/jfryman/puppet-hubot.git

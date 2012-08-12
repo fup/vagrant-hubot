@@ -1,0 +1,14 @@
+default: &default
+  orgname: websages.local
+  vbox: debian-squeeze-i386
+  memory_size: 512
+hubot:
+  <<: *default
+  puppet:
+  ports:
+    irc:
+      host: 6667
+      guest: 6667
+build:
+  <<: *default
+  puppet:

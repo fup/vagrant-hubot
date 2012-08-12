@@ -1,0 +1,633 @@
+digraph Relationships {
+    label = "Relationships"
+    "Package[coffee-script]" [
+        fontsize = 8,
+        label = "Package[coffee-script]"
+    ]
+
+    "File[/tmp/sudoers.d/fragment/vagrant]" [
+        fontsize = 8,
+        label = "File[/tmp/sudoers.d/fragment/vagrant]"
+    ]
+
+    "Class[Apt::Params]" [
+        fontsize = 8,
+        label = "Class[Apt::Params]"
+    ]
+
+    "Anchor[sudoers::end]" [
+        fontsize = 8,
+        label = "Anchor[sudoers::end]"
+    ]
+
+    "Filebucket[puppet]" [
+        fontsize = 8,
+        label = "Filebucket[puppet]"
+    ]
+
+    "Class[Sudoers::Config]" [
+        fontsize = 8,
+        label = "Class[Sudoers::Config]"
+    ]
+
+    "File[/etc/ircd-hybrid/ircd.conf]" [
+        fontsize = 8,
+        label = "File[/etc/ircd-hybrid/ircd.conf]"
+    ]
+
+    "Class[Hubot::Config]" [
+        fontsize = 8,
+        label = "Class[Hubot::Config]"
+    ]
+
+    "Anchor[git::begin]" [
+        fontsize = 8,
+        label = "Anchor[git::begin]"
+    ]
+
+    "Stage[runtime]" [
+        fontsize = 8,
+        label = "Stage[runtime]"
+    ]
+
+    "Class[Irc::Service]" [
+        fontsize = 8,
+        label = "Class[Irc::Service]"
+    ]
+
+    "File[/tmp/sudoers.d/fragment/00_sudoers_defaults]" [
+        fontsize = 8,
+        label = "File[/tmp/sudoers.d/fragment/00_sudoers_defaults]"
+    ]
+
+    "Stage[deploy_infra]" [
+        fontsize = 8,
+        label = "Stage[deploy_infra]"
+    ]
+
+    "User[hubot]" [
+        fontsize = 8,
+        label = "User[hubot]"
+    ]
+
+    "File[/usr/local/sbin/rebuild-hubot-scripts.rb]" [
+        fontsize = 8,
+        label = "File[/usr/local/sbin/rebuild-hubot-scripts.rb]"
+    ]
+
+    "Package[whois]" [
+        fontsize = 8,
+        label = "Package[whois]"
+    ]
+
+    "Stage[main]" [
+        fontsize = 8,
+        label = "Stage[main]"
+    ]
+
+    "Stage[setup_infra]" [
+        fontsize = 8,
+        label = "Stage[setup_infra]"
+    ]
+
+    "Class[Git::Client]" [
+        fontsize = 8,
+        label = "Class[Git::Client]"
+    ]
+
+    "Schedule[monthly]" [
+        fontsize = 8,
+        label = "Schedule[monthly]"
+    ]
+
+    "Anchor[irc::begin]" [
+        fontsize = 8,
+        label = "Anchor[irc::begin]"
+    ]
+
+    "Anchor[git::client::end]" [
+        fontsize = 8,
+        label = "Anchor[git::client::end]"
+    ]
+
+    "File[/tmp/sudoers.d/fragment]" [
+        fontsize = 8,
+        label = "File[/tmp/sudoers.d/fragment]"
+    ]
+
+    "File[/etc/sudoers]" [
+        fontsize = 8,
+        label = "File[/etc/sudoers]"
+    ]
+
+    "Anchor[apt::begin]" [
+        fontsize = 8,
+        label = "Anchor[apt::begin]"
+    ]
+
+    "Class[Apt::Package]" [
+        fontsize = 8,
+        label = "Class[Apt::Package]"
+    ]
+
+    "Stage[setup]" [
+        fontsize = 8,
+        label = "Stage[setup]"
+    ]
+
+    "Exec[apt-get update]" [
+        fontsize = 8,
+        label = "Exec[apt-get update]"
+    ]
+
+    "Schedule[puppet]" [
+        fontsize = 8,
+        label = "Schedule[puppet]"
+    ]
+
+    "Exec[download hubot via git]" [
+        fontsize = 8,
+        label = "Exec[download hubot via git]"
+    ]
+
+    "Class[Git::Params]" [
+        fontsize = 8,
+        label = "Class[Git::Params]"
+    ]
+
+    "Exec[rebuild-sudoers]" [
+        fontsize = 8,
+        label = "Exec[rebuild-sudoers]"
+    ]
+
+    "Schedule[weekly]" [
+        fontsize = 8,
+        label = "Schedule[weekly]"
+    ]
+
+    "Class[Irc]" [
+        fontsize = 8,
+        label = "Class[Irc]"
+    ]
+
+    "Class[Git::Client::Package]" [
+        fontsize = 8,
+        label = "Class[Git::Client::Package]"
+    ]
+
+    "Class[Vagrant]" [
+        fontsize = 8,
+        label = "Class[Vagrant]"
+    ]
+
+    "Package[update-notifier-common]" [
+        fontsize = 8,
+        label = "Package[update-notifier-common]"
+    ]
+
+    "Class[Apt::Config]" [
+        fontsize = 8,
+        label = "Class[Apt::Config]"
+    ]
+
+    "Class[Git]" [
+        fontsize = 8,
+        label = "Class[Git]"
+    ]
+
+    "Service[ircd-hybrid]" [
+        fontsize = 8,
+        label = "Service[ircd-hybrid]"
+    ]
+
+    "Exec[delete aged update-success-stamp]" [
+        fontsize = 8,
+        label = "Exec[delete aged update-success-stamp]"
+    ]
+
+    "Stage[deploy]" [
+        fontsize = 8,
+        label = "Stage[deploy]"
+    ]
+
+    "Anchor[hubot::end]" [
+        fontsize = 8,
+        label = "Anchor[hubot::end]"
+    ]
+
+    "Anchor[hutbot::begin]" [
+        fontsize = 8,
+        label = "Anchor[hutbot::begin]"
+    ]
+
+    "Package[libexpat1-dev]" [
+        fontsize = 8,
+        label = "Package[libexpat1-dev]"
+    ]
+
+    "Exec[rebuild hubot scripts]" [
+        fontsize = 8,
+        label = "Exec[rebuild hubot scripts]"
+    ]
+
+    "Node[hubot]" [
+        fontsize = 8,
+        label = "Node[hubot]"
+    ]
+
+    "Class[Main]" [
+        fontsize = 8,
+        label = "Class[Main]"
+    ]
+
+    "Anchor[sudoers::begin]" [
+        fontsize = 8,
+        label = "Anchor[sudoers::begin]"
+    ]
+
+    "Class[Hubot]" [
+        fontsize = 8,
+        label = "Class[Hubot]"
+    ]
+
+    "Class[Hubot::Package]" [
+        fontsize = 8,
+        label = "Class[Hubot::Package]"
+    ]
+
+    "File[/var/cache/local/preseeding]" [
+        fontsize = 8,
+        label = "File[/var/cache/local/preseeding]"
+    ]
+
+    "Package[libssl-dev]" [
+        fontsize = 8,
+        label = "Package[libssl-dev]"
+    ]
+
+    "File[/opt/hubot/scripts-enabled]" [
+        fontsize = 8,
+        label = "File[/opt/hubot/scripts-enabled]"
+    ]
+
+    "Stage[setup_app]" [
+        fontsize = 8,
+        label = "Stage[setup_app]"
+    ]
+
+    "Schedule[daily]" [
+        fontsize = 8,
+        label = "Schedule[daily]"
+    ]
+
+    "Class[Sudoers::Params]" [
+        fontsize = 8,
+        label = "Class[Sudoers::Params]"
+    ]
+
+    "Anchor[git::client::begin]" [
+        fontsize = 8,
+        label = "Anchor[git::client::begin]"
+    ]
+
+    "Package[nodejs]" [
+        fontsize = 8,
+        label = "Package[nodejs]"
+    ]
+
+    "Service[hubot]" [
+        fontsize = 8,
+        label = "Service[hubot]"
+    ]
+
+    "Class[Apt]" [
+        fontsize = 8,
+        label = "Class[Apt]"
+    ]
+
+    "Class[Hubot_dev]" [
+        fontsize = 8,
+        label = "Class[Hubot_dev]"
+    ]
+
+    "Anchor[git::end]" [
+        fontsize = 8,
+        label = "Anchor[git::end]"
+    ]
+
+    "Class[Stdlib::Stages]" [
+        fontsize = 8,
+        label = "Class[Stdlib::Stages]"
+    ]
+
+    "File[/opt/hubot/scripts]" [
+        fontsize = 8,
+        label = "File[/opt/hubot/scripts]"
+    ]
+
+    "Exec[download-nodejs-squeeze]" [
+        fontsize = 8,
+        label = "Exec[download-nodejs-squeeze]"
+    ]
+
+    "Class[Sudoers::Package]" [
+        fontsize = 8,
+        label = "Class[Sudoers::Package]"
+    ]
+
+    "Package[git-core]" [
+        fontsize = 8,
+        label = "Package[git-core]"
+    ]
+
+    "Package[ircd-hybrid]" [
+        fontsize = 8,
+        label = "Package[ircd-hybrid]"
+    ]
+
+    "File[/etc/init.d/hubot]" [
+        fontsize = 8,
+        label = "File[/etc/init.d/hubot]"
+    ]
+
+    "File[/tmp/sudoers.d]" [
+        fontsize = 8,
+        label = "File[/tmp/sudoers.d]"
+    ]
+
+    "Package[redis-server]" [
+        fontsize = 8,
+        label = "Package[redis-server]"
+    ]
+
+    "Class[Sudoers]" [
+        fontsize = 8,
+        label = "Class[Sudoers]"
+    ]
+
+    "Class[Hubot::Params]" [
+        fontsize = 8,
+        label = "Class[Hubot::Params]"
+    ]
+
+    "Schedule[never]" [
+        fontsize = 8,
+        label = "Schedule[never]"
+    ]
+
+    "Anchor[apt::end]" [
+        fontsize = 8,
+        label = "Anchor[apt::end]"
+    ]
+
+    "Stage[deploy_app]" [
+        fontsize = 8,
+        label = "Stage[deploy_app]"
+    ]
+
+    "File[/var/cache/local]" [
+        fontsize = 8,
+        label = "File[/var/cache/local]"
+    ]
+
+    "Package[sudo]" [
+        fontsize = 8,
+        label = "Package[sudo]"
+    ]
+
+    "Class[Irc::Config]" [
+        fontsize = 8,
+        label = "Class[Irc::Config]"
+    ]
+
+    "Exec[install hubot deps]" [
+        fontsize = 8,
+        label = "Exec[install hubot deps]"
+    ]
+
+    "File[/opt/hubot/package.json]" [
+        fontsize = 8,
+        label = "File[/opt/hubot/package.json]"
+    ]
+
+    "Schedule[hourly]" [
+        fontsize = 8,
+        label = "Schedule[hourly]"
+    ]
+
+    "Class[Stdlib]" [
+        fontsize = 8,
+        label = "Class[Stdlib]"
+    ]
+
+    "Node[basenode]" [
+        fontsize = 8,
+        label = "Node[basenode]"
+    ]
+
+    "Class[Hubot::Service]" [
+        fontsize = 8,
+        label = "Class[Hubot::Service]"
+    ]
+
+    "Class[Settings]" [
+        fontsize = 8,
+        label = "Class[Settings]"
+    ]
+
+    "Package[build-essential]" [
+        fontsize = 8,
+        label = "Package[build-essential]"
+    ]
+
+    "Anchor[irc::end]" [
+        fontsize = 8,
+        label = "Anchor[irc::end]"
+    ]
+
+    "Sudoers::Entry[vagrant]" [
+        fontsize = 8,
+        label = "Sudoers::Entry[vagrant]"
+    ]
+
+    "Class[Nodejs_squeeze]" [
+        fontsize = 8,
+        label = "Class[Nodejs_squeeze]"
+    ]
+
+    "Class[Irc::Params]" [
+        fontsize = 8,
+        label = "Class[Irc::Params]"
+    ]
+
+    "Package[git]" [
+        fontsize = 8,
+        label = "Package[git]"
+    ]
+
+    "Class[Irc::Package]" [
+        fontsize = 8,
+        label = "Class[Irc::Package]"
+    ]
+
+    "File[/tmp/sudoers.d/fragment/vagrant]" -> "Exec[rebuild-sudoers]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers::Config]" -> "Anchor[sudoers::end]" [
+        fontsize = 8
+    ]
+
+    "Class[Hubot::Config]" -> "Class[Hubot::Service]" [
+        fontsize = 8
+    ]
+
+    "Anchor[git::begin]" -> "Class[Git::Client]" [
+        fontsize = 8
+    ]
+
+    "Stage[main]" -> "Stage[runtime]" [
+        fontsize = 8
+    ]
+
+    "Stage[runtime]" -> "Stage[setup_infra]" [
+        fontsize = 8
+    ]
+
+    "Class[Irc::Service]" -> "Anchor[irc::end]" [
+        fontsize = 8
+    ]
+
+    "File[/tmp/sudoers.d/fragment/00_sudoers_defaults]" -> "Exec[rebuild-sudoers]" [
+        fontsize = 8
+    ]
+
+    "Stage[deploy_infra]" -> "Stage[setup_app]" [
+        fontsize = 8
+    ]
+
+    "Stage[setup_infra]" -> "Stage[deploy_infra]" [
+        fontsize = 8
+    ]
+
+    "Class[Git::Client]" -> "Anchor[git::end]" [
+        fontsize = 8
+    ]
+
+    "Anchor[irc::begin]" -> "Class[Irc::Package]" [
+        fontsize = 8
+    ]
+
+    "Exec[rebuild-sudoers]" -> "File[/etc/sudoers]" [
+        fontsize = 8
+    ]
+
+    "Anchor[apt::begin]" -> "Class[Apt::Package]" [
+        fontsize = 8
+    ]
+
+    "Class[Apt::Package]" -> "Class[Apt::Config]" [
+        fontsize = 8
+    ]
+
+    "Exec[download hubot via git]" -> "Class[Hubot::Config]" [
+        fontsize = 8
+    ]
+
+    "Stage[setup]" -> "Stage[main]" [
+        fontsize = 8
+    ]
+
+    "Exec[delete aged update-success-stamp]" -> "Exec[apt-get update]" [
+        fontsize = 8
+    ]
+
+    "File[/tmp/sudoers.d/fragment]" -> "Exec[rebuild-sudoers]" [
+        fontsize = 8
+    ]
+
+    "Class[Git::Client::Package]" -> "Anchor[git::client::end]" [
+        fontsize = 8
+    ]
+
+    "Class[Apt::Config]" -> "Anchor[apt::end]" [
+        fontsize = 8
+    ]
+
+    "Anchor[hutbot::begin]" -> "Class[Hubot::Package]" [
+        fontsize = 8
+    ]
+
+    "File[/usr/local/sbin/rebuild-hubot-scripts.rb]" -> "Exec[rebuild hubot scripts]" [
+        fontsize = 8
+    ]
+
+    "File[/opt/hubot/scripts-enabled]" -> "Exec[rebuild hubot scripts]" [
+        fontsize = 8
+    ]
+
+    "Anchor[sudoers::begin]" -> "Class[Sudoers::Package]" [
+        fontsize = 8
+    ]
+
+    "Class[Hubot::Package]" -> "Class[Hubot::Config]" [
+        fontsize = 8
+    ]
+
+    "Stage[setup_app]" -> "Stage[deploy_app]" [
+        fontsize = 8
+    ]
+
+    "Anchor[git::client::begin]" -> "Class[Git::Client::Package]" [
+        fontsize = 8
+    ]
+
+    "Exec[download-nodejs-squeeze]" -> "Package[nodejs]" [
+        fontsize = 8
+    ]
+
+    "Class[Sudoers::Package]" -> "Class[Sudoers::Config]" [
+        fontsize = 8
+    ]
+
+    "Stage[deploy_app]" -> "Stage[deploy]" [
+        fontsize = 8
+    ]
+
+    "File[/opt/hubot/package.json]" -> "Exec[install hubot deps]" [
+        fontsize = 8
+    ]
+
+    "Class[Irc::Config]" -> "Class[Irc::Service]" [
+        fontsize = 8
+    ]
+
+    "Class[Hubot::Service]" -> "Anchor[hubot::end]" [
+        fontsize = 8
+    ]
+
+    "Class[Irc::Package]" -> "Class[Irc::Config]" [
+        fontsize = 8
+    ]
+
+    "Class[Nodejs_squeeze]" -> "Class[Hubot]" [
+        fontsize = 8
+    ]
+
+    "File[/tmp/sudoers.d/fragment]" -> "File[/tmp/sudoers.d/fragment/vagrant]" [
+        fontsize = 8
+    ]
+
+    "File[/tmp/sudoers.d/fragment]" -> "File[/tmp/sudoers.d/fragment/00_sudoers_defaults]" [
+        fontsize = 8
+    ]
+
+    "File[/tmp/sudoers.d]" -> "File[/tmp/sudoers.d/fragment]" [
+        fontsize = 8
+    ]
+
+    "File[/var/cache/local]" -> "File[/var/cache/local/preseeding]" [
+        fontsize = 8
+    ]
+
+}
